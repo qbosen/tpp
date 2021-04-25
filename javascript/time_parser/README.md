@@ -1,22 +1,5 @@
-# TPP
+# 时间解析器
 
-`The Pragmatic Programmer: your journey to mastery`
-
-[程序员修炼之道：通向务实的最高境界](https://book.douban.com/subject/35006892/) 的练习代码
-
-1. 练习4，画海龟
-    ```
-    P 2 # select pen 2
-    D   # pen down
-    W 2 # draw west 2cm
-    N 1 # then north 1
-    E 2 # then east 2
-    S 1 # then south 1
-    U   # pen up
-    ```
-    [c语言](c/turtle)
-
-2. 练习6, BNF语法解析时间规范
     ```
     4pm, 7:38pm, 23:42, 3:16, 3:16am
     ```
@@ -35,5 +18,17 @@
     m-tens  ::= 0|1|2|3|4|5
     digit   ::= 0|1|2|3|4|5|6|7|8|9
     ```
-    
-    [javascript with Pegjs](javascript/time_parser)
+
+## 流程
+
+1. `npm install pegjs` 使用 `pegjs` PEG(parser generator)库
+2. `npm install tape` 使用 `tape` 测试库
+3. `npm init` 生成描述
+4. `vscode` 可以安装 `PEG.js Language` 插件
+5. `node run test` 执行测试
+
+
+## 参考链接
+
+1. [pegjs 语法](https://pegjs.org/documentation#using-the-parser)
+2. [tape 文档](https://www.npmjs.com/package/tape)

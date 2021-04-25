@@ -1,0 +1,16 @@
+{
+  "name": "time_parser",
+  "version": "1.0.0",
+  "description": "pegjs demo",
+  "main": "index.js",
+  "dependencies": {
+    "pegjs": "^0.10.0",
+    "tape": "^5.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npx pegjs time_parser.pegjs && node test_time_parser.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
